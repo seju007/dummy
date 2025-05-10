@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+
+.header{
+    background-color: pink;
+}
+
+.mylist{
+    display: flex;
+    list-style: none;
+    gap: 5%;
+    padding: 1.2%;
+    justify-content: center;
+
+}
+.mylist li a{
+    text-decoration: none;
+    font-size: 25px;
+}
+.mylist li p{
+    font-size: medium;
+}
+.logo{
+    position: absolute;
+    width: 100px;
+}
+.banerimg{
+    width: 100%;
+    height: 500px;
+}
+.video{
+    padding: 0.5%;
+}
+.card img{
+    width: 420px;
+    height: 300px;
+    margin:3%;
+    transition: all 1s;
+}
+.card img:hover{
+    transform: scale(1.1);
+}
+.cardcontainer{
+    display: flex;
+   
+}
+.card{
+    border: 1px solid gray;
+    padding: 1%;
+}
+.title{
+    background-color: rgb(227, 81, 111);
+    color: whitesmoke;
+}
+.last{
+    background-color: brown;
+    color: aliceblue;
+    font-size: 15px;
+}
+/* This is used for Mobile Width - search Universal Device Width*/
+@media(min-width:320px) and (max-width:480px){
+    .cardcontainer{
+        display: block;
+    }
+    .card img{
+        /* margin-left: 2%; */
+        width: 260px;
+    }
+    .logo{
+        width: 55px;
+    }
+    .mylist{
+        gap:3%;
+        
+    }
+    .mylist li a{
+        font-size: 15px;
+    }
+
+}
+/* This is used for Tablet Width -*/
+@media(min-width:481px) and (max-width:768px){
+    .cardcontainer{
+        display: block;
+    }
+    .card img{
+       margin-left: 8%;
+        width: 360px;
+    }
+
+}
